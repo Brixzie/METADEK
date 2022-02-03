@@ -1,24 +1,85 @@
-import logo from './logo.svg';
-import './App.css';
+import { Room1, Room2, GridContainer, GridContainer1,NestedGridContiner, Seat } from "./test.styles";
+
 
 function App() {
+
+  const seatsRoomOne = 10;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GridContainer1>
+      <Room1>
+      <h3>Room 1</h3>
+        <NestedGridContiner>
+          <Seat onClick={() => alert('Seat reserved')}> 
+            <p>Seat 1</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 2</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 3</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 4</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 5</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 6</p>  
+          </Seat>
+        </NestedGridContiner>
+      </Room1>
+    </GridContainer1>
+    <GridContainer>
+      <Room2>
+      <h3>Room 2</h3>
+        <NestedGridContiner>
+          <Seat onClick={() => alert('Seat reserved')}> 
+            <p>Seat 1</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 2</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 3</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 4</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 5</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 6</p>  
+          </Seat>
+        </NestedGridContiner>
+      </Room2>
+      <Room2>
+      <h3>Room 3</h3>
+        <NestedGridContiner>
+          <Seat onClick={() => alert('Seat reserved')}> 
+            <p>Seat 1</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 2</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 3</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 4</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 5</p>  
+          </Seat>
+          <Seat>
+            <p>Seat 6</p>  
+          </Seat>
+        </NestedGridContiner>
+      </Room2>
+    </GridContainer>
+    </>
   );
 }
 
